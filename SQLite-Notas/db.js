@@ -49,8 +49,7 @@ export const insertMessage = (message, callback) => {
         console.log('Erro inserindo mensagem: ' + error.message);
       }
     );
-  });
-  
+  });  
 };
 
 export const updateMessage = (message, callback) => {

@@ -5,7 +5,7 @@ import { openDb } from './db';
 
 export async function GET() {
   const db = await openDb();
-  const todos = await db.all('SELECT * FROM todos');
+  const todos = await db.all('SELECT * FROM messages');
   return Response.json(todos)
 }
 

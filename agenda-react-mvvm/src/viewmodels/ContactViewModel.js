@@ -17,9 +17,9 @@ const useContactViewModel = () => {
     };
 
     const deleteContact = (id) => {
-        const updatedContacts = contacts.filter(contact => contact.id !== id);
-        setContacts(updatedContats);
-        localStorage.setItem("contacts", JSON.stringify(updatedContacts));
+        const tmpContacts = contacts.filter(contact => contact.id !== id);
+        setContacts(tmpContacts);
+        localStorage.setItem("contacts", JSON.stringify(tmpContacts));
     };
 
     return { contacts, addContact, deleteContact };
